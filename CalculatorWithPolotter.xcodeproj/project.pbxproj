@@ -12,6 +12,15 @@
 		458B322F2294006600FA7665 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 458B322D2294006600FA7665 /* Main.storyboard */; };
 		458B32312294006700FA7665 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 458B32302294006700FA7665 /* Assets.xcassets */; };
 		458B32342294006700FA7665 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 458B32322294006700FA7665 /* LaunchScreen.storyboard */; };
+		458B32422294018000FA7665 /* RPN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458B32412294018000FA7665 /* RPN.swift */; };
+		458B3245229401B400FA7665 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458B3244229401B400FA7665 /* Extensions.swift */; };
+		458B3247229403FE00FA7665 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458B3246229403FE00FA7665 /* Calculator.swift */; };
+		458B324B2294078C00FA7665 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458B324A2294078C00FA7665 /* AlertManager.swift */; };
+		458B324E229408AF00FA7665 /* CurvedLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458B324D229408AF00FA7665 /* CurvedLogic.swift */; };
+		458B3250229408D500FA7665 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458B324F229408D500FA7665 /* Point.swift */; };
+		458B325222940FBC00FA7665 /* Plot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458B325122940FBC00FA7665 /* Plot.swift */; };
+		458B32552294104100FA7665 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458B32542294104100FA7665 /* NetworkManager.swift */; };
+		458B32582294106E00FA7665 /* SpellChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458B32572294106E00FA7665 /* SpellChecker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +31,15 @@
 		458B32302294006700FA7665 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		458B32332294006700FA7665 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		458B32352294006700FA7665 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		458B32412294018000FA7665 /* RPN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPN.swift; sourceTree = "<group>"; };
+		458B3244229401B400FA7665 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		458B3246229403FE00FA7665 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
+		458B324A2294078C00FA7665 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		458B324D229408AF00FA7665 /* CurvedLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvedLogic.swift; sourceTree = "<group>"; };
+		458B324F229408D500FA7665 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		458B325122940FBC00FA7665 /* Plot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plot.swift; sourceTree = "<group>"; };
+		458B32542294104100FA7665 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		458B32572294106E00FA7665 /* SpellChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellChecker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +72,95 @@
 		458B32282294006600FA7665 /* CalculatorWithPolotter */ = {
 			isa = PBXGroup;
 			children = (
-				458B32292294006600FA7665 /* AppDelegate.swift */,
-				458B322B2294006600FA7665 /* ViewController.swift */,
-				458B322D2294006600FA7665 /* Main.storyboard */,
-				458B32302294006700FA7665 /* Assets.xcassets */,
-				458B32322294006700FA7665 /* LaunchScreen.storyboard */,
-				458B32352294006700FA7665 /* Info.plist */,
+				458B324C2294089600FA7665 /* Plot */,
+				458B323C229400FF00FA7665 /* Calculator */,
+				458B323B2294009C00FA7665 /* App */,
+				458B323F2294012F00FA7665 /* Supporting Files */,
 			);
 			path = CalculatorWithPolotter;
+			sourceTree = "<group>";
+		};
+		458B323B2294009C00FA7665 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				458B32322294006700FA7665 /* LaunchScreen.storyboard */,
+				458B32292294006600FA7665 /* AppDelegate.swift */,
+				458B324A2294078C00FA7665 /* AlertManager.swift */,
+				458B32542294104100FA7665 /* NetworkManager.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		458B323C229400FF00FA7665 /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				458B32432294019F00FA7665 /* Extensions */,
+				458B32402294017200FA7665 /* Model */,
+				458B323E2294011D00FA7665 /* Controller */,
+				458B323D2294010F00FA7665 /* View */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
+		458B323D2294010F00FA7665 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				458B322D2294006600FA7665 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		458B323E2294011D00FA7665 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				458B32562294105800FA7665 /* ViewControllers */,
+				458B32572294106E00FA7665 /* SpellChecker.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		458B323F2294012F00FA7665 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				458B32302294006700FA7665 /* Assets.xcassets */,
+				458B32352294006700FA7665 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		458B32402294017200FA7665 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				458B32412294018000FA7665 /* RPN.swift */,
+				458B3246229403FE00FA7665 /* Calculator.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		458B32432294019F00FA7665 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				458B3244229401B400FA7665 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		458B324C2294089600FA7665 /* Plot */ = {
+			isa = PBXGroup;
+			children = (
+				458B324D229408AF00FA7665 /* CurvedLogic.swift */,
+				458B324F229408D500FA7665 /* Point.swift */,
+				458B325122940FBC00FA7665 /* Plot.swift */,
+			);
+			path = Plot;
+			sourceTree = "<group>";
+		};
+		458B32562294105800FA7665 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				458B322B2294006600FA7665 /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +234,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				458B3250229408D500FA7665 /* Point.swift in Sources */,
+				458B32582294106E00FA7665 /* SpellChecker.swift in Sources */,
 				458B322C2294006600FA7665 /* ViewController.swift in Sources */,
+				458B32552294104100FA7665 /* NetworkManager.swift in Sources */,
 				458B322A2294006600FA7665 /* AppDelegate.swift in Sources */,
+				458B324E229408AF00FA7665 /* CurvedLogic.swift in Sources */,
+				458B324B2294078C00FA7665 /* AlertManager.swift in Sources */,
+				458B32422294018000FA7665 /* RPN.swift in Sources */,
+				458B3247229403FE00FA7665 /* Calculator.swift in Sources */,
+				458B325222940FBC00FA7665 /* Plot.swift in Sources */,
+				458B3245229401B400FA7665 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +392,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2ZG5VTK82Y;
-				INFOPLIST_FILE = CalculatorWithPolotter/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CalculatorWithPolotter/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +410,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2ZG5VTK82Y;
-				INFOPLIST_FILE = CalculatorWithPolotter/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CalculatorWithPolotter/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
