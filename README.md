@@ -17,3 +17,5 @@
 
 Технические требования
 Запрещено использовать готовые библиотеки для построения графиков (например, d3.js для веб, Charts для iOS и т.д.).
+
+![](images/own realisation.png)    ![](images/using WolframAlpha.png)  
