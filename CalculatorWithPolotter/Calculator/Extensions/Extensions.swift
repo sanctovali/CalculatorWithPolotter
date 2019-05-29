@@ -47,4 +47,12 @@ extension String {
 			}
 		}
 	}
+	/// replasing math operation symbols and spaces with url codes
+	var percentEncoded: String {
+		let allowedCharacters = CharacterSet(charactersIn: "-+^÷×√ ").inverted
+		guard let encodedString = self.addingPercentEncoding(withAllowedCharacters: allowedCharacters) else {
+			fatalError()
+		}
+		return encodedString
+	}
 }

@@ -149,9 +149,13 @@ class ViewController: UIViewController {
 	
 	private func useWolframAlpha(isFunction: Bool) {
 		let baseStringUrl = "https://api.wolframalpha.com/v1/simple?appid="
-		let appid = "59K2W3-625JWVW6YQ"
+		let appid = "enter-your-appid-here"
 		let expression = isFunction ? "&i=plot expression from startx to endx" : "&i=expression"
-		let finalStringURL = baseStringUrl + appid + NetworkManager.shared.encodeToURL(expression.replacingOccurrences(of: "expression", with: str)).replacingOccurrences(of: "startx", with: xStartValue == nil ? "" : xStartValue.roundToDecimal(2).stringValue).replacingOccurrences(of: "endx", with: xEndValue == nil ? "" : xEndValue.roundToDecimal(2).stringValue)
+		let finalStringURL = baseStringUrl + appid + (expression
+		.replacingOccurrences(of: "expression", with: str))
+		.replacingOccurrences(of: "startx", with: xStartValue == nil ? "" : xStartValue.roundToDecimal(2).stringValue)
+		.replacingOccurrences(of: "endx", with: xEndValue == nil ? "" : xEndValue.roundToDecimal(2).stringValue)
+		.percentEncoded
 		
 		if let url = URL(string: finalStringURL) {
 			activityIndicator.startAnimating()
