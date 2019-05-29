@@ -149,7 +149,7 @@ class ViewController: UIViewController {
 	
 	private func useWolframAlpha(isFunction: Bool) {
 		let baseStringUrl = "https://api.wolframalpha.com/v1/simple?appid="
-		let appid = "enter-your-appid-here"
+		let appid = "YOUR_KEY"
 		let expression = isFunction ? "&i=plot expression from startx to endx" : "&i=expression"
 		let finalStringURL = baseStringUrl + appid + (expression
 		.replacingOccurrences(of: "expression", with: str))
